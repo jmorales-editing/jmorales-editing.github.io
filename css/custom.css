@@ -12,6 +12,27 @@
   text-align: center; /* Fallback for inline elements */
 }
 
+footer {
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight animation class */
+footer#contact.footer-highlight {
+    animation: footer-blink 1s ease;
+    color: #fff;
+}
+
+@keyframes footer-blink {
+    0% {
+        background-color: #333347;
+    }
+    50% {
+        background-color: #6666aa; /* Brighter color */
+    }
+    100% {
+        background-color: #333347;
+    }
+}
 
 @media all and (max-width: 767px) {
 	#nav-logo {

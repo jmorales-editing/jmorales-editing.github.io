@@ -581,6 +581,10 @@ footer {
 .fullscreen {
   height: 100vh;
 }
+
+.almost-fullscreen {
+  height: 80vh;
+}
 .bg-dark h1,
 nav.bg-dark h1,
 footer.bg-dark h1,
@@ -2889,6 +2893,10 @@ button[type="submit"] .form-loading {
   height: 100vh !important;
   padding-top: 0;
 }
+.page-title.almost-fullscreen {
+  height: 80vh !important;
+  padding-top: 0;
+}
 /*!---------- 21. WIDGETS ----------*/
 .widget {
   margin-bottom: 48px;
@@ -3653,6 +3661,12 @@ img {
 .cover.fullscreen .slides > li {
   height: 100vh;
 }
+.cover:first-child .almost-fullscreen {
+  max-height: 80%;
+}
+.cover.almost-fullscreen .slides > li {
+  height: 80vh;
+}
 .cover .slides li .container {
   z-index: 4;
   position: relative;
@@ -3694,6 +3708,22 @@ img {
     -webkit-transform: none;
   }
   .cover.fullscreen .slides li {
+    height: auto;
+    padding: 80px 0;
+  }
+  .cover.almost-fullscreen {
+    height: auto;
+    padding: 80px 0;
+  }
+  .cover.almost-fullscreen.image-slider {
+    padding: 0;
+  }
+  .cover.almost-fullscreen .container {
+    top: 0;
+    transform: none;
+    -webkit-transform: none;
+  }
+  .cover.almost-fullscreen .slides li {
     height: auto;
     padding: 80px 0;
   }
